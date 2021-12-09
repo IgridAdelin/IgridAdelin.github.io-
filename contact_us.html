@@ -4,322 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT US -- Bellafare</title>
-    <link rel="icon" href="Asset/favicon.jpg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson Text: 700,700i,400i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rouge Script">
-    <style>
-        *{
-            box-sizing: border-box;
-            background-color: #fafafadc;
-        }
-        }
-        body{
-            font-family: "Crimson Text";
-            width: 100%;
-        }
-        img.logo{
-            width: 300px;
-            margin: 30px;
-        }
-        .mainpage{
-            height: 100px;
-            font-family: "Crimson Text";
-            position: absolute;
-            width: 100%;
-            margin-right: 0px;
-            top: 0%;
-            left: 0%;
-            float: right;
-        }
-        .container{
-            color: black;
-            text-align: center;
-            padding: 2px 10px;
-            margin: 20px;
-            float: right;
-            overflow: hidden;
-        }
-        .navigation{
-            float: right;
-            overflow: hidden;
-        }
-        .navigation a{
-            float: left;
-            color: black;
-            font-size: 14px;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 20px;
-            cursor: pointer;   
-        }
-        .navigation a:hover{
-            color: #b5996f;
-        }
-
-        a:nth-child(1):hover{
-            transition: all 0.5s;
-        }
-
-        a:nth-child(2):hover{
-            transition: all 0.5s;
-        }
-        a:nth-child(3):hover{
-            transition: all 0.5s;
-        }
-        a:nth-child(4):hover{
-            transition: all 0.5s;
-        }
-        a:nth-child(5):hover{
-            transition: all 0.5s;
-        }
-        img.sosmed{
-            float: left;
-            width: 20px;
-            margin: -10px;
-            margin-top: 2px;
-            margin-left: -10px;
-            opacity: 0.5;
-            position: relative;
-        }
-        img.sosmed:hover{
-            opacity: 1;
-            transition: all 0.5s;
-        }
-        div.mainpage:after{
-            content: "";
-            display: table;
-            clear: both;
-        }
-        .head{
-            font-size: 20px;
-            margin: 120px 30px 20px 30px;
-            color: rgba(61, 59, 59, 0.815);
-        }
-        .text1{
-            font-style: italic;
-            color: rgba(61, 59, 59, 0.815);
-            margin: 30px;
-            letter-spacing: 1px;
-        }
-        .text2{
-            font-size: 30px;
-            color: rgba(61, 59, 59, 0.815);
-            margin: 30px;
-            letter-spacing: 1px;
-        }
-        input[type=text], select, textarea {
-            color: rgba(61, 59, 59, 0.815);
-            width: 50%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin: 6px 0px 4px;
-        }
-        label{
-            padding: 12px 12px 12px 0px;
-            display: inline-block;
-        }
-        input[type=submit] {
-            font-family: "Crimson Text";
-            font-size: 16px;
-            letter-spacing: 5px;
-            background: #fafafa;
-            color: #b5996f;
-            padding: 10px 35px;
-            margin: 50px;
-            margin-bottom: 30px;
-            margin-left: 240px;
-            border: 2px solid #b5996f;
-            border-radius: 2px;
-            line-height: normal;
-            box-sizing: border-box;
-            cursor: pointer;
-            float: left;
-        }
-        input[type=submit]:hover {
-            background-color: #b5996f;
-            color: white;
-        }
-        .container{
-            border-radius: 2px;
-            padding: 0px;
-            text-align: left;
-        }
-        .col-1{
-            float: left;
-            width: 15%;
-            margin: 20px 10px 20px 10px ;
-            text-align: left;
-            padding-left: 40px;
-        }
-        .col-2{
-            float: left;
-            width: 70%;
-            margin: 20px 10px 20px 5px;
-            padding-left: 5px;
-        }
-        .row{
-            float: left;
-            width: 1000px;
-            margin-left: 20px;
-        }
-        input[type=email], select, textarea {
-            color: rgba(61, 59, 59, 0.815);
-            width: 50%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin: 6px 0px 4px;
-        }  
-        input[type=password], select, textarea {
-            color: rgba(61, 59, 59, 0.815);
-            width: 50%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin: 6px 0px 4px;
-        }
-        input[type=radio], select, textarea {
-            color: rgba(61, 59, 59, 0.815);
-            border: 1px solid #ccc;
-        }
-        select[type=text], select, textarea {
-            color: rgba(61, 59, 59, 0.815);
-            width: 50%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin: 6px 0px 4px;
-        }
-        input[type=checkbox], select, textarea {
-            color: rgba(61, 59, 59, 0.815);
-            border: 1px solid #ccc;
-        }
-    </style>
-
+    <title>BellaFare/gallery</title>
+    <!--Icon pada title Website-->
+    <link rel="icon" href="Asset/favicon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="mainpage">
-        <a href="index.html"><img src="Asset/Bellafare.png" class="logo" alt="Bellafare"></a>
-        <div class="container">
-            <div class="navigation">
-                <a href="index.html">HOME</a>
-                 <a href="biodata.html" target="_blank">BIODATA</a>
-                 <a href="contact_us.html" target="_blank">CONTACT_US</a>
-                 <a href="gallery.html" target="_blank">GALLERY</a>
-                 <a href="about.html" target="_blank">ABOUT</a>
-                 <a href="https://id.pinterest.com/bellafare/_created/" target="_blank"><img src="Asset/pinterest.png" class="sosmed"></a>
-                 <a href="https://www.instagram.com/bellafare/" target="_blank"><img src="Asset/instagram.png" class="sosmed"></a>
+    <!-- Navigation and Headline -->
+    <nav class="navbar navbar-light navbar-expand-sm bg-light justify-content-end" style="padding: 19px 0px;">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img src="Asset/Bellafare.png" style="width: 300px; margin: 0px 19px;" alt="BellaFare" class="d-inline-block align-text-top"></a>
+            <ul class="navbar-nav headline" >
+                <li class="nav-item navigation"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item navigation"><a class="nav-link" href="biodata.html">BIODATA</a></li>
+                <li class="nav-item navigation"><a class="nav-link" href="contact_us.html">CONTACT_US</a></li>
+                <li class="nav-item navigation"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                <li class="nav-item navigation"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item navigation"><a class="nav-link" href="https://id.pinterest.com/bellafare/_created/"><img src="Asset/pinterest.png" class="sosmed"></a></li>
+                <li class="nav-item navigation"><a class="nav-link" href="https://www.instagram.com/bellafare/"><img src="Asset/instagram.png" class="sosmed"></a></li>
+                <li class="nav-item navigation"><a class="nav-link" href="https://fti.unai.edu" target="_blank">FTI_UNAI</a></li>
+                <li class="nav-item navigation"><a class="nav-link" style="margin-right: 20px" target="_blank" href="http://unai.edu" target="_blank">UNAI</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Formulir -->
+    <div class="container">
+        <div id="form" class="mt-5">
+            <h3 class="mt-5 mb-5" style="text-align: center;">KONTAK KAMI</h3>
+            <form class="form-horizontal" action="simpan.php" method="get">
+                <div class="form-group col-sm-12">
+                    <!-- Nama Lengkap -->
+                    <label class="control-label col-sm-6" for="nama">Nama Lengkap</label>
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control mt-3 mb-4" id="nama" name="nama" placeholder="Masukkan Nama Lengkap Anda">
+                    </div>
+                    <!-- Email -->
+                    <label for="control-label col-sm-6"for="email">Email</label>
+                    <input type="text" class="form-control mt-3 mb-4" id="email" placeholder="Masukkan Email Anda">
+                    <!-- Username -->
+                    <label for="control-label col-sm-6"for="username">Username</label>
+                    <input type="text" class="form-control mt-3 mb-4" id="username" placeholder="Masukkan Usernama Anda">
+                    <!-- Password -->
+                    <div class="col-auto"><label for="pass" class="col-form-label">Password</label></div>
+                    <div class="col-auto"><input type="password" class="form-control" id="pass" placeholder="Masukkan Password Anda"></div><br>
+                    <!-- Jenis Kelamin -->
+                    <label for="control-label col-sm-6"for="JK">Jenis Kelamin: </label>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioMale">
+                        <label class="form-check-label" for="radioMale">Laki-laki</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radioFemale">
+                        <label class="form-check-label" for="radioFemale">Perempuan</label>
+                    </div><br><br>
+                    <!-- Agama -->
+                    <label for="control-label col-sm-6"for="agama">Agama</label>
+                        <select class="form-select mt-3" aria-label="Default select example">
+                            <option>Pilih Agama</option>
+                            <option value="kristen_protestan">Kristen Protestan</option>
+                            <option value="islam">Islam</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="budha">Konghucu</option>
+                        </select>
+                    <!-- Alamat -->
+                    <div class="form-group mt-3 mb-4">
+                        <label for="alamat">Alamat</label>
+                        <textarea class="form-control" rows="5" id="alamat" placeholder="Masukkan Alamat Anda"></textarea>
+                    </div>
+                    <!-- Hobby -->
+                    <label for="control-label col-sm-6 mb-6" for="hobby">Hobby: </label>
+                    <label class="checkbox-inline"><input type="checkbox" value="Membaca">Membaca</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="Menulis">Fotografi</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="Ngoding">Kuliner</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="Editing">Travelling</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="Olahraga">Olahraga</label>
+                </div>
+                <br>
+                    <!-- Button Submin dan hapus -->
+                    <button type="submit button" class="btn btn-success">Simpan</button>
+                    <button type="reset" class="btn btn-outline-danger">Hapus</button>
+            </form>
+            <br>
+        </div> 
+    </div>
+
+    <!-- Footer -->
+    <div class="container p-5 text-dark text-center">
+        <div class="row text-center">
+            <div class="col sm-4">
+                <p class="footer" href="mailto:events@bellafare.com">events@bellafare.com</p>
+            </div>
+            <div class="col sm-4">
+                <img src="Asset/BellaFare(1).jpg">
+            </div>
+            <div class="col sm-4">
+                <a href="https://id.pinterest.com/bellafare/_created/"><img src="Asset/pinterest.png" class="sosmed2"></a>
+                <a href="https://www.instagram.com/bellafare/"><img src="Asset/instagram.png" class="sosmed2"></a>
             </div>
         </div>
     </div>
 
-    <p class="head">GIVE US A SHOUT</p>
-    <p class="text1">bellafare has offices in new york city and charleston, sc and will cater<br>to destination events throughout the country and beyond.</p>
-    <p class="text2">PLEASE COMPLETE THE FORM BELOW</p>
-    <hr>
-    <div class="container">
-      <form action="/action_page.php" method="POST">
-      <div class="row">
-        <div class="col-1">
-            <label for="fullname">Full Name : </label>
+    <div class="container p-5 text-dark text-center">
+        <div class="row">
+            <div class="col">
+                <p class="footer2">&copy; 2019 Bellafare, LLC. All Rights Reserved.</p>
+            </div>
         </div>
-        <div class="col-2">
-            <input type="text" id="full" name="fullname">
-        </div>
-      </div>
-    
-      <div class="row">
-        <div class="col-1">
-          <label for="email">Email : </label>
-        </div>
-        <div class="col-2">
-          <input type="email" id="email" name="email">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1">
-          <label for="username">Username : </label>
-        </div>
-        <div class="col-2">
-          <input type="text" id="username" name="username">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1">
-          <label for="password">Password : </label>
-        </div>
-        <div class="col-2">
-          <input type="password" id="password" name="password">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1">
-            <label for="gender">Gender : </label>
-        </div>
-        <div class="col-2">
-            <input type="radio" id="gender" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="gender" name="gender" value="female">
-            <label for="female">Female</label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1">
-          <label for="religion">Religion : </label>
-        </div>
-        <div class="col-2">
-          <select id="religion" name="religion" placeholder="select here">
-            <option value="christian">Christian</option>
-            <option value="moeslim">Moeslim</option>
-            <option value="hinduism">Hinduism</option>
-            <option value="buddhism">Buddhism</option>
-            <option value="moeslim">Judaism</option>
-            <option value="etc">Etc</option>
-          </select>
-        </div>
-      </div> 
-
-      <div class="row">
-        <div class="col-1">
-          <label for="address">Address : </label>
-        </div>   
-        <div class="row-2"> 
-              <textarea id="address" name="address" rows="5" cols="30"></textarea>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-1">
-          <label for="hobby">Hobby :</label>
-        </div>
-        <div class="col-2">
-          <input type="checkbox" id="hobby" name="hobby" value="reading">
-          <label>Reading</label>
-          <input type="checkbox" id="hobby2" name="hobby2" value="traveling">
-          <label>Traveling</label>
-          <input type="checkbox" id="hobby3" name="hobby3" value="photography">
-          <label>Photography</label>
-          <input type="checkbox" id="hobby4" name="hobby4" value="culinary">
-          <label>Culinary</label>
-          <input type="checkbox" id="hobby5" name="hobby5" value="Other">
-          <label>Other</label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-2">
-          <input type="submit" value="SUBMIT">
-        </div>
-      </div>
-      </form>
     </div>
 </body>
 </html>
